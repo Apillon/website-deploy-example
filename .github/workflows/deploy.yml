@@ -29,4 +29,4 @@ jobs:
           APILLON_API_KEY: ${{ secrets.APILLON_API_KEY }}
           APILLON_API_SECRET: ${{ secrets.APILLON_API_SECRET }}
           WEBSITE_UUID: ${{ secrets.WEBSITE_UUID }}
-        run: npx apillon hosting deploy-website ./dist --uuid $WEBSITE_UUID --key $APILLON_API_KEY --secret $APILLON_API_SECRET
+        run: npx --yes @apillon/cli hosting deploy-website ./dist --uuid $WEBSITE_UUID --key $APILLON_API_KEY --secret $APILLON_API_SECRET
